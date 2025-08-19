@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devices — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+        <h2>Devices</h2>
+        <p class="project-blurb">
+          A series of small mechanisms, each hiding in plain sight. These works explore
+          how surveillance, cuteness, and labor operate beneath institutional surfaces.
+        </p>
+        <div class="hero-image project-hero"></div>
+
+        <hr class="project-hr" />
+
+        <div class="sub-project">
+          <h3>Ceiling Servo Rig</h3>
+          <p class="project-text">This early version uses recycled hardware to test interference with the ceiling tile grid.</p>
+          <div class="project-image image-3x2"></div>
+          <p class="caption">Servo-driven object emerging through acoustic ceiling tile.</p>
+          <div class="project-image image-square"></div>
+          <p class="caption">Servo-driven object emerging through acoustic ceiling tile.</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('/partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+  </script>
+
+</body>
+</html>

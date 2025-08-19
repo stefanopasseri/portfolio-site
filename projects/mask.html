@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mask — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Mask</h2>
+        <p class="project-blurb">
+          Architectural-scale prosthetic installation.
+        </p>
+
+        <!--hero image-->
+        <div class="hero-image project-hero is-photo">
+          <img src = "/images/mask/mask-hero.jpg" alt="Mask hero">
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+          Mask is a conceptual architectural installation that extends a modernist museum 
+          into the narrow space between its facade and a neighboring nineteenth-century building. 
+          Using a figural language that reads as a mask or prosthetic, the design emphasizes contrast 
+          with the museum’s minimalism while bridging the gap between the two structures. 
+          The result is a visual dialogue between contemporary and historical forms, 
+          inviting viewers to reflect on the evolving character of the site.
+
+        </p>
+
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-1.jpg" alt="Mask image 1">
+        </div>
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-2.jpg" alt="Mask image 2">
+        </div>
+
+        <!--YT clip of project-->
+        <div class="video-wrapper gap-md">
+          <iframe 
+            src="https://www.youtube.com/embed/5-W_Br2uFfg?autoplay=1&mute=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+
+
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-2a.jpg" alt="Mask image 2a">
+        </div>
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-3.jpg" alt="Mask image 3">
+        </div>
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-4.jpg" alt="Mask image 4">
+        </div>
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-4a.jpg" alt="Mask image 4a">
+        </div>
+        <div class="project-image image-3x2 is-photo gap-md">
+          <img src = "/images/mask/mask-img-5.jpg" alt="Mask image 5">
+        </div>
+        <div class="project-image image-square is-photo gap-md">
+          <img src = "/images/mask/mask-img-6.jpg" alt="Mask image 6">
+        </div>
+        <div class="project-image image-2x1 is-photo gap-lg">
+          <img src = "/images/mask/mask-img-7.jpg" alt="Mask image 7">
+        </div>
+        <div class="project-image image-2x1 is-photo gap-none">
+          <img src = "/images/mask/mask-img-8.jpg" alt="Mask image 8">
+        </div>
+
+        <p class="caption">
+          Parti diagarms showing the as-built site and the area of the proposed
+          intervention (thin, long red rectangle on the right).
+        </p>
+      </div>
+    </main>
+  </div>
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('/partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

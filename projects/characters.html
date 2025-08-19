@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Characters — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Cast of Characters</h2>
+        <p class="project-blurb">
+          Extruded Polystyrene Sculptures.
+        </p>
+
+        <!--hero image-->
+        <div class="hero-image project-hero is-photo">
+          <img src = "/images/characters/characters-hero.jpg" alt="Mask hero">
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+          Cast of Characters is a series of polystyrene sculptures cut from large blocks 
+          using robotic hot-wire fabrication. The process yields sharp, intricate profiles 
+          that transform a familiar industrial material into unexpected forms. 
+          The work emphasizes a tension between precision cutting and irregular figuration, 
+          presenting the foam not as disposable matter but as a medium for sculptural inquiry. 
+          The result is a play between material banality and formal interest, 
+          prompting viewers to reconsider the possibilities of process, surface, and scale.
+        </p>
+
+        <p class="project-blurb">
+          In collaboration with Anass Benachmi and David Eskenazi
+        </p>
+
+        <div class="project-image image-2x3 is-photo gap-md">
+          <img src = "/images/characters/characters-img-1.jpg" alt="Characters image 1">
+        </div>
+        <div class="project-image image-2x3 is-photo gap-md">
+          <img src = "/images/characters/characters-img-2.jpg" alt="Characters image 2">
+        </div>
+        <div class="project-image image-2x3 is-photo gap-md">
+          <img src = "/images/characters/characters-img-3.jpg" alt="Characters image 3">
+        </div>
+        <div class="project-image image-2x3 is-photo gap-md">
+          <img src = "/images/characters/characters-img-4.jpg" alt="Characters image 4">
+        </div>
+
+        <div class="project-image image-3x2 is-photo gap-none">
+          <img src = "/images/characters/characters-img-5.jpg" alt="Characters image 5">
+        </div>
+        <p class="caption">
+          A robotic arm with a hot wire cutter mounted on it was used to cut the sculptures. 
+        </p>
+
+        <div class="project-image image-3x2 is-photo gap-none">
+          <img src = "/images/characters/characters-img-6.jpg" alt="Characters image 6">
+        </div>
+        <p class="caption">
+          Diagrams showing the design process used in the creation of the sculptures.
+        </p>
+
+      </div>
+    </main>
+  </div>
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('/partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
