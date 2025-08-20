@@ -30,6 +30,12 @@ as flex items (css flexbox) */
 
 /* //////////////////// */
 /* TYPOGRAPHY & SPACING */
+/* this one is for my name as link at the top of teh index */
+h1 a {
+  text-decoration: none; /* removes underline */
+  color: inherit; /* makes it use the same color as the h1 */
+}
+
 .sidebar h1 {
   font-weight: normal; /* removes bold from my name */
   font-size: 1.5rem;
