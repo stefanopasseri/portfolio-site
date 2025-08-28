@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirrors — Stefano Passeri</title>
 
-  <link rel="stylesheet" href="/style/reset.css" />
-  <link rel="stylesheet" href="/style/base.css" />
-  <link rel="stylesheet" href="/style/main.css" />
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/base.css" />
+  <link rel="stylesheet" href="style/main.css" />
   
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -29,7 +29,7 @@
 
         <!--hero image-->
         <div class="hero-image project-hero is-photo">
-          <img src = "/images/mirrors/mirrors-hero.jpg" alt="Mask hero">
+          <img src = "images/mirrors/mirrors-hero.jpg" alt="Mask hero">
         </div>
 
         <hr class="project-hr" />
@@ -44,21 +44,21 @@
         </p>
 
         <div class="project-image image-square is-photo gap-md">
-          <img src = "/images/mirrors/mirrors-img-1.jpg" alt="Mirrors image 1">
+          <img src = "images/mirrors/mirrors-img-1.jpg" alt="Mirrors image 1">
         </div>
         <p class="caption">
           Scale model of the installation.
         </p>        
 
         <div class="project-image image-2x1 is-photo gap-none">
-          <img src = "/images/mirrors/mirrors-img-2.jpg" alt="Mirrors image 2">
+          <img src = "images/mirrors/mirrors-img-2.jpg" alt="Mirrors image 2">
         </div>
         <p class="caption gap-xl">
           Site plan of the full proposal seen along the Thames's South Bank.
         </p>
 
         <div class="project-image image-2x6 is-photo gap-xl">
-          <img src = "/images/mirrors/mirrors-img-2a.jpg" alt="Mirrors image 2a">
+          <img src = "images/mirrors/mirrors-img-2a.jpg" alt="Mirrors image 2a">
         </div>
         <p class="caption gap-md">
           Enlarged site plan.
@@ -66,7 +66,7 @@
 
 
         <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "/images/mirrors/mirrors-img-3.jpg" alt="Mirrors image 3">
+          <img src = "images/mirrors/mirrors-img-3.jpg" alt="Mirrors image 3">
         </div>
         <p class="caption">
           Eye-level perspective view of the "collage of mirrors" created by the installation
@@ -74,24 +74,24 @@
         </p>
 
         <div class="project-image image-2x3 is-photo gap-none">
-          <img src = "/images/mirrors/mirrors-img-4.jpg" alt="Mirrors image 4">
+          <img src = "images/mirrors/mirrors-img-4.jpg" alt="Mirrors image 4">
         </div>
         <p class="caption gap-xl">
           Site axonometric showing the proposed full path of the mirrors over time.
         </p>
 
         <div class="project-image image-3x2 is-photo gap-xl">
-          <img src = "/images/mirrors/mirrors-img-5.jpg" alt="Mirrors image 5">
+          <img src = "images/mirrors/mirrors-img-5.jpg" alt="Mirrors image 5">
         </div>
         <div class="project-image image-2x1 is-photo gap-none">
-          <img src = "/images/mirrors/mirrors-img-6.jpg" alt="Mirrors image 6">
+          <img src = "images/mirrors/mirrors-img-6.jpg" alt="Mirrors image 6">
         </div>
         <p class="caption">
           Detail design development drawings.
         </p>
 
         <div class="project-image image-2x1 is-photo gap-none">
-          <img src = "/images/mirrors/mirrors-img-7.jpg" alt="Mirrors image 7">
+          <img src = "images/mirrors/mirrors-img-7.jpg" alt="Mirrors image 7">
         </div>
         <p class="caption">
           Working sketches of the main mechanisms of the installation.
@@ -103,7 +103,7 @@
 
     <!--JS snippets that fetches the index for each page-->
   <script>
-  fetch('/partials/nav.html')
+  fetch('partials/nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('site-nav').innerHTML = data;
