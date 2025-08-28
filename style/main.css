@@ -188,6 +188,10 @@ h1 a {
   aspect-ratio: 2 / 3;
 }
 
+.image-2x6 {
+  aspect-ratio: 2 / 6;
+}
+
 .image-2x1 {
   aspect-ratio: 2 / 1;
 }

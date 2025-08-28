@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stefano Passeri</title>
-  <link rel="stylesheet" href="/style/reset.css" />
-  <link rel="stylesheet" href="/style/base.css" />
-  <link rel="stylesheet" href="/style/main.css" />
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/base.css" />
+  <link rel="stylesheet" href="style/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
@@ -22,7 +22,7 @@
   </div>
   <!--JS snippets that fetches the index for each page-->
   <script>
-  fetch('/partials/nav.html')
+  fetch('partials/nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('site-nav').innerHTML = data;
