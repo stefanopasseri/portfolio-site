@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mask — Stefano Passeri</title>
 
-  <link rel="stylesheet" href="style/reset.css" />
-  <link rel="stylesheet" href="style/base.css" />
-  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
   
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -29,7 +29,7 @@
 
         <!--hero image-->
         <div class="hero-image project-hero is-photo">
-          <img src = "images/mask/mask-hero.jpg" alt="Mask hero">
+          <img src = "../images/mask/mask-hero.jpg" alt="Mask hero">
         </div>
 
         <hr class="project-hr" />
@@ -45,10 +45,10 @@
         </p>
 
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-1.jpg" alt="Mask image 1">
+          <img src = "../images/mask/mask-img-1.jpg" alt="Mask image 1">
         </div>
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-2.jpg" alt="Mask image 2">
+          <img src = "../images/mask/mask-img-2.jpg" alt="Mask image 2">
         </div>
 
         <!--YT clip of project-->
@@ -64,28 +64,28 @@
 
 
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-2a.jpg" alt="Mask image 2a">
+          <img src = "../images/mask/mask-img-2a.jpg" alt="Mask image 2a">
         </div>
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-3.jpg" alt="Mask image 3">
+          <img src = "../images/mask/mask-img-3.jpg" alt="Mask image 3">
         </div>
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-4.jpg" alt="Mask image 4">
+          <img src = "../images/mask/mask-img-4.jpg" alt="Mask image 4">
         </div>
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-4a.jpg" alt="Mask image 4a">
+          <img src = "../images/mask/mask-img-4a.jpg" alt="Mask image 4a">
         </div>
         <div class="project-image image-3x2 is-photo gap-md">
-          <img src = "images/mask/mask-img-5.jpg" alt="Mask image 5">
+          <img src = "../images/mask/mask-img-5.jpg" alt="Mask image 5">
         </div>
         <div class="project-image image-square is-photo gap-md">
-          <img src = "images/mask/mask-img-6.jpg" alt="Mask image 6">
+          <img src = "../images/mask/mask-img-6.jpg" alt="Mask image 6">
         </div>
         <div class="project-image image-2x1 is-photo gap-lg">
-          <img src = "images/mask/mask-img-7.jpg" alt="Mask image 7">
+          <img src = "../images/mask/mask-img-7.jpg" alt="Mask image 7">
         </div>
         <div class="project-image image-2x1 is-photo gap-none">
-          <img src = "images/mask/mask-img-8.jpg" alt="Mask image 8">
+          <img src = "../images/mask/mask-img-8.jpg" alt="Mask image 8">
         </div>
 
         <p class="caption">
@@ -98,7 +98,7 @@
 
     <!--JS snippets that fetches the index for each page-->
   <script>
-  fetch('partials/nav.html')
+  fetch('../partials/nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('site-nav').innerHTML = data;

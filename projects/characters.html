@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Characters — Stefano Passeri</title>
 
-  <link rel="stylesheet" href="style/reset.css" />
-  <link rel="stylesheet" href="style/base.css" />
-  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
   
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -29,7 +29,7 @@
 
         <!--hero image-->
         <div class="hero-image project-hero is-photo">
-          <img src = "images/characters/characters-hero.jpg" alt="Mask hero">
+          <img src = "../images/characters/characters-hero.jpg" alt="Mask hero">
         </div>
 
         <hr class="project-hr" />
@@ -49,27 +49,27 @@
         </p>
 
         <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "images/characters/characters-img-1.jpg" alt="Characters image 1">
+          <img src = "../images/characters/characters-img-1.jpg" alt="Characters image 1">
         </div>
         <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "images/characters/characters-img-2.jpg" alt="Characters image 2">
+          <img src = "../images/characters/characters-img-2.jpg" alt="Characters image 2">
         </div>
         <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "images/characters/characters-img-3.jpg" alt="Characters image 3">
+          <img src = "../images/characters/characters-img-3.jpg" alt="Characters image 3">
         </div>
         <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "images/characters/characters-img-4.jpg" alt="Characters image 4">
+          <img src = "../images/characters/characters-img-4.jpg" alt="Characters image 4">
         </div>
 
         <div class="project-image image-3x2 is-photo gap-none">
-          <img src = "images/characters/characters-img-5.jpg" alt="Characters image 5">
+          <img src = "../images/characters/characters-img-5.jpg" alt="Characters image 5">
         </div>
         <p class="caption">
           A robotic arm with a hot wire cutter mounted on it was used to cut the sculptures. 
         </p>
 
         <div class="project-image image-3x2 is-photo gap-none">
-          <img src = "images/characters/characters-img-6.jpg" alt="Characters image 6">
+          <img src = "../images/characters/characters-img-6.jpg" alt="Characters image 6">
         </div>
         <p class="caption">
           Diagrams showing the design process used in the creation of the sculptures.
@@ -81,7 +81,7 @@
 
     <!--JS snippets that fetches the index for each page-->
   <script>
-  fetch('partials/nav.html')
+  fetch('../partials/nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('site-nav').innerHTML = data;
