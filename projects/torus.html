@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Twisted Torus — Stefano Passeri</title>
 
-  <link rel="stylesheet" href="style/reset.css" />
-  <link rel="stylesheet" href="style/base.css" />
-  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
   
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -29,7 +29,7 @@
 
         <!--hero image-->
         <div class="hero-image project-hero is-photo">
-          <img src = "images/torus/torus-hero.jpg" alt="Twisted Torus hero">
+          <img src = "../images/torus/torus-hero.jpg" alt="Twisted Torus hero">
         </div>
 
         <hr class="project-hr" />
@@ -43,19 +43,19 @@
         </p>
 
         <div class="project-image image-free is-photo gap-md">
-          <img src = "images/torus/torus-img-1.jpg" alt="Twisted Torus image">
+          <img src = "../images/torus/torus-img-1.jpg" alt="Twisted Torus image">
         </div>
         <div class="project-image image-free is-photo gap-md">
-          <img src = "images/torus/torus-img-2.jpg" alt="Twisted Torus image">
+          <img src = "../images/torus/torus-img-2.jpg" alt="Twisted Torus image">
         </div>
         <div class="project-image image-free is-photo gap-lg">
-          <img src = "images/torus/torus-img-3.jpg" alt="Twisted Torus image">
+          <img src = "../images/torus/torus-img-3.jpg" alt="Twisted Torus image">
         </div>
         <div class="project-image image-free is-photo gap-none">
-          <img src = "images/torus/torus-process-1.jpg" alt="Twisted Torus process image">
+          <img src = "../images/torus/torus-process-1.jpg" alt="Twisted Torus process image">
         </div>
         <div class="project-image image-free is-photo gap-md">
-          <img src = "images/torus/torus-process-2.jpg" alt="Twisted Torus process image">
+          <img src = "../images/torus/torus-process-2.jpg" alt="Twisted Torus process image">
         </div>
         <p class="caption">Process diagrams showing the development of the form and 
           the articulation of the interior geometry.</p>
@@ -65,7 +65,7 @@
 
     <!--JS snippets that fetches the index for each page-->
   <script>
-  fetch('partials/nav.html')
+  fetch('../partials/nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('site-nav').innerHTML = data;
