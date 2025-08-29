@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 aa7bc395e2cbff01194abd84d1d7d80df2578fad Stefano Passeri <stefanoppasseri@gmail.com> 1755639232 -0400	commit (initial): initial commit - index torus mask characters
+aa7bc395e2cbff01194abd84d1d7d80df2578fad 0000000000000000000000000000000000000000 Stefano Passeri <stefanoppasseri@gmail.com> 1755639386 -0400	Branch: renamed refs/heads/main to refs/heads/main
+aa7bc395e2cbff01194abd84d1d7d80df2578fad aa7bc395e2cbff01194abd84d1d7d80df2578fad Stefano Passeri <stefanoppasseri@gmail.com> 1755639386 -0400	Branch: renamed refs/heads/main to refs/heads/main
+aa7bc395e2cbff01194abd84d1d7d80df2578fad 19aafc905cd14db6584b97e533465c872dc2cb62 Stefano Passeri <stefanoppasseri@gmail.com> 1755726028 -0400	commit: added mirrors project and linked my name to home page
+19aafc905cd14db6584b97e533465c872dc2cb62 9b061600ea50e302475f45f6f36f736a8958080d Stefano Passeri <stefanoppasseri@gmail.com> 1756406224 -0400	commit: fix paths for gh-pages
+9b061600ea50e302475f45f6f36f736a8958080d 55c283f8cc2363e570d296e47d98f9c44758dd90 Stefano Passeri <stefanoppasseri@gmail.com> 1756406872 -0400	commit: fix all paths for gh pages
+55c283f8cc2363e570d296e47d98f9c44758dd90 10be4679d326b1e031adb626bf1c8273c58d36e0 Stefano Passeri <stefanoppasseri@gmail.com> 1756406968 -0400	commit: fix nav paths for gh pages
+10be4679d326b1e031adb626bf1c8273c58d36e0 7a3b08e723d90ff891f82d8797aacde8bd3cf2df Stefano Passeri <stefanoppasseri@gmail.com> 1756407774 -0400	commit: fix projects path for gh pages - torus test
+7a3b08e723d90ff891f82d8797aacde8bd3cf2df c7ff64708005c3328a40fd32fbeb2d7098c71e8a Stefano Passeri <stefanoppasseri@gmail.com> 1756407956 -0400	commit: fix projects path for gh pages - torus test 2
+c7ff64708005c3328a40fd32fbeb2d7098c71e8a aa756d9808d79b79417b82bbb4e5cf2a0d14c06a Stefano Passeri <stefanoppasseri@gmail.com> 1756408366 -0400	commit: fix projects path for gh pages - index
+aa756d9808d79b79417b82bbb4e5cf2a0d14c06a c5afa6e8a40988def740465e73fb14941b89698b Stefano Passeri <stefanoppasseri@gmail.com> 1756408841 -0400	commit: fix all projects path for gh pages
+c5afa6e8a40988def740465e73fb14941b89698b 98d394ef4ec0b80cf7eefdfc47e6247061cd4ee9 Stefano Passeri <stefanoppasseri@gmail.com> 1756409331 -0400	commit: favicon
+98d394ef4ec0b80cf7eefdfc47e6247061cd4ee9 b95e85db457f1c4d9600365d8103f5661c66e68a Stefano Passeri <stefanoppasseri@gmail.com> 1756414281 -0400	commit: nav new
+b95e85db457f1c4d9600365d8103f5661c66e68a 930d40e9b558bcbef5ceedb97715d7fa99e6aed7 Stefano Passeri <stefanoppasseri@gmail.com> 1756414443 -0400	pull --rebase origin main (start): checkout 930d40e9b558bcbef5ceedb97715d7fa99e6aed7
+930d40e9b558bcbef5ceedb97715d7fa99e6aed7 b153f86b462323967619140042a0356008a2a952 Stefano Passeri <stefanoppasseri@gmail.com> 1756414443 -0400	pull --rebase origin main (pick): nav new
+b153f86b462323967619140042a0356008a2a952 b153f86b462323967619140042a0356008a2a952 Stefano Passeri <stefanoppasseri@gmail.com> 1756414443 -0400	pull --rebase origin main (finish): returning to refs/heads/main
+b153f86b462323967619140042a0356008a2a952 e8e58866c242a1e3dbb46255435e071f1f8fa530 Stefano Passeri <stefanoppasseri@gmail.com> 1756414506 -0400	commit: nav new
+e8e58866c242a1e3dbb46255435e071f1f8fa530 267422ecc067589d4f1710b13c0790903f2d8b39 Stefano Passeri <stefanoppasseri@gmail.com> 1756466750 -0400	commit: add 404 redirect
+267422ecc067589d4f1710b13c0790903f2d8b39 1365b1ceac378759da2294b8fc74d683f158b163 Stefano Passeri <stefanoppasseri@gmail.com> 1756474691 -0400	commit: index hero
