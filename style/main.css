@@ -161,6 +161,14 @@ h1 a {
   padding: 0;
 }
 
+/* make hero image actually fill the 16:9 container */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* PROJECT page tweaks */
 .project-hero {
   aspect-ratio: 3 / 2;
