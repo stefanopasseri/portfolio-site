@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stefano Passeri</title>
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/base.css" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+<body>
+  <div class="wrapper">
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+      <!--top of page-->
+      <h2>About</h2>
+      <p class="project-blurb">
+       Stefano Passeri is an Italian-born artist based in the Washington, D.C. 
+       area. Using model-making, programming, digital fabrication, and simple 
+       mechanics, his work foregrounds the fragility and humor embedded in 
+       everyday technology. His projects reimagine monumental structures as 
+       everyday materials—cardboard, foam, or off-the-shelf fixtures in place 
+       of steel or stone—underscoring the relationship between permanence and 
+       impermanence. His recent work focuses on the aesthetics of estrangement, 
+       inviting technology to be seen less as spectacle than as a means of 
+       defamiliarizing familiar structures.
+        <br><br>
+       Stefano holds an M.Arch with distinction from the Southern California 
+       Institute of Architecture (SCI-Arc), where his thesis was awarded the 
+       Frank O. Gehry Prize and the AIA Henry Adams Medal. He also holds a BA 
+       in Fine Art and an MA in Philosophy from the University of London, 
+       as well as a BSc from the Bartlett School of Architecture, University 
+       College London.. He has taught architecture and digital media for more 
+       than a decade at institutions including SCI-Arc and Rensselaer Polytechnic
+       Institute. He is currently a faculty member in Art and Immersive Media Design 
+       at the University of Maryland.
+
+      </p>
+
+  </div>
+  <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+</body>
+</html>
