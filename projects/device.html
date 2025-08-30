@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twisted Torus — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Tidal Device</h2>
+        <p class="project-blurb">
+          Site specific installation for a canal lock in East London.
+        </p>
+
+        <!--hero image-->
+        <div class="hero-image project-hero is-photo">
+          <img src = "../images/device/tidal-hero.jpg" alt="Tidal device hero">
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+          Installed beneath a footbridge in the London Docklands, this work 
+          functioned as a self-contained water cycle triggered by the tide. 
+          Canal water was pumped into a labyrinth of bags, pipes, and 
+          counterweights that slowly released it back in tiny trickles and 
+          cascades. The piece resembled a primitive machine or Rube Goldberg 
+          mechanism—absorbed moving water without serving any practical purpose. 
+          Rooted in its site, it turned the bridge’s undercroft into a sculptural 
+          stage for its fragile, provisional machinery.  
+        </p>
+
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/device/tidal-img-1.jpg" alt="Tidal device image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/device/tidal-img-1a.gif" alt="Tidal device image">
+        </div>
+        <div class="project-image image-free is-photo gap-lg">
+          <img src = "../images/device/tidal-img-1b.jpg" alt="Tidal device image">
+        </div>
+        <div class="project-image image-free is-photo gap-none">
+          <img src = "../images/device/tidal-img-1c.jpg" alt="Tidal device image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/device/tidal-img-2.jpg" alt="Twisted Torus image">
+        </div>
+        <p class="caption">Orthographic drawing showing the assembled components.</p>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/device/tidal-img-2a.jpg" alt="Twisted Torus image">
+        </div>
+        <p class="caption">Scale model of the installation.</p>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/device/tidal-img-3.jpg" alt="Twisted Torus image">
+        </div>
+        <p class="caption">A view of the nearby canal lock mechanism.</p>
+      </div>
+    </main>
+  </div>
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('../partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
