@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casting Against Type — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Casting Against Type</h2>
+        <p class="project-blurb">
+          Profiles and letterforms swap roles.
+        </p>
+
+        <!--hero image-->
+        <div class="hero-image project-hero is-photo">
+          <img src = "../images/type/type-hero.jpg" alt="Type hero">
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+            This project explores the reciprocity between architecture and typography 
+            through orthographic drawing, treating both profiles and characters as marks 
+            that straddle abstraction and meaning. Architectural outlines are read as 
+            letterforms, while letters are cast as architectural profiles, creating 
+            hybrid figures that blur disciplinary boundaries. By shifting between 
+            projection and typesetting, Casting Against Type considers how the 
+            functional aesthetics of type can find new life in space, and how 
+            architectural representation can take on the immediacy of script.
+        </p>
+
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-1.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-2.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-3.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-3a.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-4.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-6.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-7.jpg" alt="Type image">
+        </div>
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/type/type-img-8.jpg" alt="Type image">
+        </div>
+
+
+        <!--
+                <p class="caption">Process diagrams showing the development of the form and 
+          the articulation of the interior geometry.</p>
+        -->
+
+      </div>
+    </main>
+  </div>
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('../partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
