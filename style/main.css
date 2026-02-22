@@ -286,6 +286,7 @@ without messing up given aspect ratio of video */
 /* p5js style for larry */
 .p5-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 0;
 }
