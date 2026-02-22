@@ -287,7 +287,7 @@ without messing up given aspect ratio of video */
 .p5-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0;
 }
 
