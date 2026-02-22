@@ -283,6 +283,18 @@ without messing up given aspect ratio of video */
   height: 100%;
 }
 
+/* p5js style for larry */
+.p5-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.p5-container {
+  width: 500px;
+  height: 500px;
+}
+
 /* TEMP: add then remove after testing correct margins */
 /* .project-image {
   outline: 2px solid magenta;
