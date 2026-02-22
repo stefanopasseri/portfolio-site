@@ -162,6 +162,8 @@ function createWalkerSketch(parentId) {
   };
 }
 
-// create two independent instances
+// create independent instances
 new p5(createWalkerSketch('sketch1'));
 new p5(createWalkerSketch('sketch2'));
+new p5(createWalkerSketch('sketch3'));
+new p5(createWalkerSketch('sketch4'));
