@@ -1,0 +1,48 @@
+0000000000000000000000000000000000000000 aa7bc395e2cbff01194abd84d1d7d80df2578fad Stefano Passeri <stefanoppasseri@gmail.com> 1755639232 -0400	commit (initial): initial commit - index torus mask characters
+aa7bc395e2cbff01194abd84d1d7d80df2578fad aa7bc395e2cbff01194abd84d1d7d80df2578fad Stefano Passeri <stefanoppasseri@gmail.com> 1755639386 -0400	Branch: renamed refs/heads/main to refs/heads/main
+aa7bc395e2cbff01194abd84d1d7d80df2578fad 19aafc905cd14db6584b97e533465c872dc2cb62 Stefano Passeri <stefanoppasseri@gmail.com> 1755726028 -0400	commit: added mirrors project and linked my name to home page
+19aafc905cd14db6584b97e533465c872dc2cb62 9b061600ea50e302475f45f6f36f736a8958080d Stefano Passeri <stefanoppasseri@gmail.com> 1756406224 -0400	commit: fix paths for gh-pages
+9b061600ea50e302475f45f6f36f736a8958080d 55c283f8cc2363e570d296e47d98f9c44758dd90 Stefano Passeri <stefanoppasseri@gmail.com> 1756406872 -0400	commit: fix all paths for gh pages
+55c283f8cc2363e570d296e47d98f9c44758dd90 10be4679d326b1e031adb626bf1c8273c58d36e0 Stefano Passeri <stefanoppasseri@gmail.com> 1756406968 -0400	commit: fix nav paths for gh pages
+10be4679d326b1e031adb626bf1c8273c58d36e0 7a3b08e723d90ff891f82d8797aacde8bd3cf2df Stefano Passeri <stefanoppasseri@gmail.com> 1756407774 -0400	commit: fix projects path for gh pages - torus test
+7a3b08e723d90ff891f82d8797aacde8bd3cf2df c7ff64708005c3328a40fd32fbeb2d7098c71e8a Stefano Passeri <stefanoppasseri@gmail.com> 1756407956 -0400	commit: fix projects path for gh pages - torus test 2
+c7ff64708005c3328a40fd32fbeb2d7098c71e8a aa756d9808d79b79417b82bbb4e5cf2a0d14c06a Stefano Passeri <stefanoppasseri@gmail.com> 1756408366 -0400	commit: fix projects path for gh pages - index
+aa756d9808d79b79417b82bbb4e5cf2a0d14c06a c5afa6e8a40988def740465e73fb14941b89698b Stefano Passeri <stefanoppasseri@gmail.com> 1756408841 -0400	commit: fix all projects path for gh pages
+c5afa6e8a40988def740465e73fb14941b89698b 98d394ef4ec0b80cf7eefdfc47e6247061cd4ee9 Stefano Passeri <stefanoppasseri@gmail.com> 1756409331 -0400	commit: favicon
+98d394ef4ec0b80cf7eefdfc47e6247061cd4ee9 b95e85db457f1c4d9600365d8103f5661c66e68a Stefano Passeri <stefanoppasseri@gmail.com> 1756414281 -0400	commit: nav new
+b95e85db457f1c4d9600365d8103f5661c66e68a b153f86b462323967619140042a0356008a2a952 Stefano Passeri <stefanoppasseri@gmail.com> 1756414443 -0400	pull --rebase origin main (finish): refs/heads/main onto 930d40e9b558bcbef5ceedb97715d7fa99e6aed7
+b153f86b462323967619140042a0356008a2a952 e8e58866c242a1e3dbb46255435e071f1f8fa530 Stefano Passeri <stefanoppasseri@gmail.com> 1756414506 -0400	commit: nav new
+e8e58866c242a1e3dbb46255435e071f1f8fa530 267422ecc067589d4f1710b13c0790903f2d8b39 Stefano Passeri <stefanoppasseri@gmail.com> 1756466750 -0400	commit: add 404 redirect
+267422ecc067589d4f1710b13c0790903f2d8b39 1365b1ceac378759da2294b8fc74d683f158b163 Stefano Passeri <stefanoppasseri@gmail.com> 1756474691 -0400	commit: index hero
+1365b1ceac378759da2294b8fc74d683f158b163 9673b9cc267d455ca12b6ba8067147929898990c Stefano Passeri <stefanoppasseri@gmail.com> 1756474707 -0400	commit: index hero 2
+9673b9cc267d455ca12b6ba8067147929898990c 5dd929bcad99ac4bf4247fbc7a9f7bf1b34a4e77 Stefano Passeri <stefanoppasseri@gmail.com> 1756474829 -0400	commit: archive comment out for now
+5dd929bcad99ac4bf4247fbc7a9f7bf1b34a4e77 f0c8278a58a3a08d44f79c09bbb70a07fa4e173c Stefano Passeri <stefanoppasseri@gmail.com> 1756475390 -0400	commit: hero fit
+f0c8278a58a3a08d44f79c09bbb70a07fa4e173c f60e80a499b670051624e2234516f4d05d2bfafe Stefano Passeri <stefanoppasseri@gmail.com> 1756475990 -0400	commit: hero new
+f60e80a499b670051624e2234516f4d05d2bfafe cad5ce72d714a3da7d064dbed05404f7f4b72df3 Stefano Passeri <stefanoppasseri@gmail.com> 1756512675 -0400	commit: about page
+cad5ce72d714a3da7d064dbed05404f7f4b72df3 58dd2d900c5587a1e2985edf7623c967679cc09e Stefano Passeri <stefanoppasseri@gmail.com> 1756512902 -0400	commit: about page 2
+58dd2d900c5587a1e2985edf7623c967679cc09e 23309e13247f5586fff36c443bf24e4872963f0c Stefano Passeri <stefanoppasseri@gmail.com> 1756513434 -0400	commit: tidal device added
+23309e13247f5586fff36c443bf24e4872963f0c 57cacc1506eebf9c612fa87230694f4d8b6bf612 Stefano Passeri <stefanoppasseri@gmail.com> 1756513562 -0400	commit: tidal device added tweak
+57cacc1506eebf9c612fa87230694f4d8b6bf612 b1541905edf2682c1eebf01ba59f329024d34145 Stefano Passeri <stefanoppasseri@gmail.com> 1756588353 -0400	commit: type project added
+b1541905edf2682c1eebf01ba59f329024d34145 6e2a3a80dff45f3a10124ee5198911675496d8c0 Stefano Passeri <stefanoppasseri@gmail.com> 1758989659 -0400	commit: torus image rename
+6e2a3a80dff45f3a10124ee5198911675496d8c0 07ec4335954f3441a5edcee5be117a59d9c233dc Stefano Passeri <stefanoppasseri@gmail.com> 1758989756 -0400	commit: torus image rename 2
+07ec4335954f3441a5edcee5be117a59d9c233dc 6e21ed23e89c1fe18afe3e367c932d2b7c0781f5 Stefano Passeri <stefanoppasseri@gmail.com> 1758989935 -0400	commit: torus image rename 3
+6e21ed23e89c1fe18afe3e367c932d2b7c0781f5 5b736363504c453551a5a8981a2e4ef035d0d8da stefanopasseri <stefanoppasseri@gmail.com> 1771794535 -0500	commit: Add Larry project page
+5b736363504c453551a5a8981a2e4ef035d0d8da 96d2ff187e2bff94d6c7f4ec1f66e8e4174b6d83 stefanopasseri <stefanoppasseri@gmail.com> 1771794803 -0500	commit: add larry page 2
+96d2ff187e2bff94d6c7f4ec1f66e8e4174b6d83 3711075c686ea576d3d8095e1cb26ceebf45f0fd stefanopasseri <stefanoppasseri@gmail.com> 1771795967 -0500	commit: larry videos wip
+3711075c686ea576d3d8095e1cb26ceebf45f0fd 23d6b4c84c2e0173f0d6c33580400b1e86c1bc06 stefanopasseri <stefanoppasseri@gmail.com> 1771796539 -0500	commit: larry videos wip 2
+23d6b4c84c2e0173f0d6c33580400b1e86c1bc06 4085b43fd571b545fa2d0256d83a83b026c44049 stefanopasseri <stefanoppasseri@gmail.com> 1771796844 -0500	commit: larry videss wip 3
+4085b43fd571b545fa2d0256d83a83b026c44049 0d1ff77ac412c2521e7e6353a9e568814dfb2443 stefanopasseri <stefanoppasseri@gmail.com> 1771797887 -0500	commit: larry p5js random walk wip 1
+0d1ff77ac412c2521e7e6353a9e568814dfb2443 d25b526eb496d41344bdd3f5f6635330d0ad919c stefanopasseri <stefanoppasseri@gmail.com> 1771798068 -0500	commit: larry p5 wip 2
+d25b526eb496d41344bdd3f5f6635330d0ad919c faa657e1909b5adbf7098cf575dbc727f5f2b356 stefanopasseri <stefanoppasseri@gmail.com> 1771798683 -0500	commit: larry p5 wip 3
+faa657e1909b5adbf7098cf575dbc727f5f2b356 8c22e63587f635a05255290511ac7c4f0246e7df stefanopasseri <stefanoppasseri@gmail.com> 1771799019 -0500	commit: larry p5 wip 4
+8c22e63587f635a05255290511ac7c4f0246e7df 96ac4fc9cc55a3f7593f3c936ceb1b8ea3278d41 stefanopasseri <stefanoppasseri@gmail.com> 1771799244 -0500	commit: larry p5 wip 5
+96ac4fc9cc55a3f7593f3c936ceb1b8ea3278d41 f8708ed3723da4b19331e91e0eadc92c187e5b6d stefanopasseri <stefanoppasseri@gmail.com> 1771799448 -0500	commit: larry p5 wip 6
+f8708ed3723da4b19331e91e0eadc92c187e5b6d 9a9f678fb0a8cb36b913da9ca69c1f718b7bc2c0 stefanopasseri <stefanoppasseri@gmail.com> 1771799609 -0500	commit: larry p5 wip 7
+9a9f678fb0a8cb36b913da9ca69c1f718b7bc2c0 d6e7e86b3162bceb924d168a3f019029ec2799a6 stefanopasseri <stefanoppasseri@gmail.com> 1771800084 -0500	commit: larry p5 wip 8
+d6e7e86b3162bceb924d168a3f019029ec2799a6 68e2354dd652ac237013a579f71293f4219d42e1 stefanopasseri <stefanoppasseri@gmail.com> 1771848388 -0500	commit: larry captions
+68e2354dd652ac237013a579f71293f4219d42e1 67cf13cdbb737f1e2a150efc0c236f4214401cb8 stefanopasseri <stefanoppasseri@gmail.com> 1771848978 -0500	commit: larry captions 2
+67cf13cdbb737f1e2a150efc0c236f4214401cb8 b64b91e7319927b2016f498eb281d6af90b231bf stefanopasseri <stefanoppasseri@gmail.com> 1772986130 -0400	commit: larry cnc photo
+b64b91e7319927b2016f498eb281d6af90b231bf 3f97d4820472bac39ac558ffa76a19d1fe5ad067 stefanopasseri <stefanoppasseri@gmail.com> 1772987821 -0400	commit: larry motor detail video
+3f97d4820472bac39ac558ffa76a19d1fe5ad067 bba0977021399f7eb0d939406bb22334fee0f53c stefanopasseri <stefanoppasseri@gmail.com> 1772987869 -0400	commit: larry motor detail video again
+bba0977021399f7eb0d939406bb22334fee0f53c b985640b6a1fa80870c598f93930c0a18ce8da5c stefanopasseri <stefanoppasseri@gmail.com> 1773004756 -0400	commit: index video larry clip
+b985640b6a1fa80870c598f93930c0a18ce8da5c 56c50416266f52496bbb1854eeb235671004cbb1 stefanopasseri <stefanoppasseri@gmail.com> 1773004933 -0400	commit: index larry clip 2
