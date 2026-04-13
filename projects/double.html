@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Double — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Double (December 1612)</h2>
+        <p class="project-blurb">
+          Mixed-media wall-mounted sculpture.
+        </p>
+
+        <!--hero image-->
+        <div class="hero-image project-hero is-photo">
+          <img src = "../images/larry/larry-hero.jpg" alt="Larry hero">
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+          Double (December 1612) consists of two identical, wall-mounted cubic volumes. At first 
+          the forms appear sealed and fully reflective, returning the viewer to themselves. 
+          Over time, an internal light intermittently reveals faintly glowing text embedded within 
+          the volume, visible only from certain angles and after sustained looking. 
+          When the light is on it remains intermittent, never resolving into a stable pattern, 
+          and may alternately read as a deliberate feature or slightly malfunctioning.
+          The two forms differ only in a subtle variation in the rhythm of this flicker, 
+          a misalignment that is difficult to register but slowly unsettles their superficial 
+          sameness. What presents as a monolithic, self-contained pair begins to shift behaviorally, 
+          moving between reflection and inscription, flatness and depth, sculptural stillness and 
+          electrical twinkle without ever fully resolving.
+        </p>
+
+
+        <!--video-->
+        <div class="project-image image-free is-photo gap-lg">
+          <video 
+            src="../images/larry/larry-clip-2.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="project-video">
+          </video>
+        </div>
+
+        <div class="project-image image-free is-photo gap-lg">
+          <video 
+            src="../images/larry/larry-clip-1.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="project-video">
+          </video>
+        </div>
+
+        <p class="caption">Larry's endless walk. The walk is always different, 
+          but all versions are equally purposeless. </p>
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/larry/larry-img-1.jpg" alt="Larry image">
+        </div>
+
+        <p class="caption">Assembled interior CNC mechanism. </p>
+
+        <!--video-->
+        <div class="project-image image-free is-photo gap-lg">
+          <video 
+            src="../images/larry/larry-clip-3.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="project-video">
+          </video>
+        </div>
+
+        <p class="caption">Detail of the motor / coupler / limit switch assembly. </p>
+
+
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('../partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>
