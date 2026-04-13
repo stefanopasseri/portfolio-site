@@ -169,6 +169,14 @@ h1 a {
   display: block;
 }
 
+/* make hero video have same margin as images (see Double) */
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* make hero video behave like hero image so it fills container and aligns correctly */
 .hero-image video {
   width: 100%;
