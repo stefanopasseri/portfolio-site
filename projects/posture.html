@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posture — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>A Question of Posture</h2>
+        <p class="project-blurb">
+          Inflatable sculptures.
+        </p>
+
+        <!--hero video - FIX BELOW: override global .hero-image video { height: 100% }-->
+        <div class="hero-image is-photo" style="margin-bottom: 5rem;">
+          <video 
+            src="../images/posture/posture-hero.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="hero-video fix-double-video" 
+            ></video>
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+              A Question of Posture consists of a group of inflatable sculptures arranged as a temporary
+              gallery installation. The forms borrow from the language of Minimalist sculpture — cubes,
+              columns, repeated verticals, and primary color — but replace stillness and authority with
+              pressure, movement, and partial collapse. Fans, cords, fabric, seams, and simple support
+              systems remain visible, allowing the works to read both as abstract sculpture and as provisional
+              devices trying to maintain themselves. Over time, the columns subtly sway, bend, deflate, and
+              recover, while the cubes rotate slowly or shift out of sync with one another. Their behavior is
+              restrained rather than spectacular: a posture held briefly, lost, corrected, and lost again.
+              What first appears composed and architectural begins to feel unstable, comic, and faintly
+              theatrical, as if the objects have been assigned a role they can only partially perform.
+              The installation moves between geometry and character, monument and prop, sculpture and
+              slow physical gag, without settling fully into any one of them.
+        </p>
+
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/double/posture-img-1.jpg" alt="Posture image">
+        </div>
+
+        <p class="caption">Inflatable column shown in three states: collapsed, partially recovering, and upright.</p>
+
+
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('../partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>
