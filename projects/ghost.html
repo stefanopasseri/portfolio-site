@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost — Stefano Passeri</title>
+
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/main.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
+    <nav class="sidebar" id="site-nav"></nav>
+
+    <main class="project-display">
+      <div class="project-content">
+
+        <!--top of page-->
+        <h2>Ghost of Ghost</h2>
+        <p class="project-blurb">
+          Modified Oldenburg sculpture.
+        </p>
+
+        <!--hero video - FIX BELOW: override global .hero-image video { height: 100% }-->
+        <div class="hero-image is-photo" style="margin-bottom: 5rem;">
+          <video 
+            src="../images/ghost/ghost-hero.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="hero-video fix-double-video" 
+            ></video>
+        </div>
+
+        <hr class="project-hr" />
+
+        <p class="project-blurb">
+          Ghost of Ghost is a full-scale modified reconstruction of Claes Oldenburg and Patty Mucha’s 
+          1964 work Soft Light Switches—Ghost Version-II. The modified sculpture retains the original's 
+          oversized slumped fabric form while introducing an internal mechanism of air, valves, motors, and 
+          electronics. Over the course of approximately an hour, the piece slowly inflates, sags, and partially 
+          collapses while the two toggles intermittently change position. These movements occur gradually and 
+          unevenly, sometimes becoming apparent only after looking away and returning. Although the addition 
+          of a mechanism brings the sculpture strangely closer to the object it represents, the familiar 
+          wall switch, its behavior remains detached from any useful function: no light is switched on, 
+          and the movements produce no clear result. Instead, the sculpture passes through a succession 
+          of subtly different states, at times appearing active and responsive and at others nearly inert. 
+          What initially presents as a static soft sculpture becomes difficult to hold as a stable image, 
+          changing slowly enough that it is not always clear when, or whether, something has happened.
+        </p>
+
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/double/double-img-1.jpg" alt="Double image">
+        </div>
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/double/double-img-2.jpg" alt="Double image">
+        </div>
+
+        <p class="caption">With the internal light off (top) and on (bottom), revealing the engraved text.</p>
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/double/double-img-3.jpg" alt="Double image">
+        </div>
+
+        <!--img-->
+        <div class="project-image image-free is-photo gap-md">
+          <img src = "../images/double/double-img-4.jpg" alt="Double image">
+        </div>
+
+
+    <!--JS snippets that fetches the index for each page-->
+  <script>
+  fetch('../partials/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('site-nav').innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>
