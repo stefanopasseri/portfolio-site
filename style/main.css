@@ -354,9 +354,10 @@ without messing up given aspect ratio of video */
   overflow: hidden;
 }
 
-.image-table__cell img {
+.image-table__cell img,
+.image-table__cell video {
   width: 100%;
-  height: 100%;
+  height: 100% !important; /* beats the global .hero-image / .project-image video height rules */
   object-fit: cover; /* crops to square, never stretches */
   display: block;
 }
