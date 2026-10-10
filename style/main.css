@@ -391,3 +391,129 @@ without messing up given aspect ratio of video */
 .table-cell-2x3 .image-table__cell {
   aspect-ratio: 2 / 3;
 }
+
+/* //////////////////// */
+/* MOBILE (paste at the very end of main.css) */
+/* Below 768px the two columns stack: name + menu on top, work below.
+   Project pages: the project list collapses behind "Projects +".
+   Homepage (body class="home"): the list stays open. */
+
+/* the "Projects +" toggle only exists on phones */
+.nav-toggle-label {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* sidebar becomes a wrapping row: name / line / Projects + About / list */
+  .sidebar {
+    width: auto;
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 1.5rem;
+  }
+
+  .sidebar h1,
+  .sidebar hr {
+    flex-basis: 100%;
+  }
+
+  .sidebar h1 {
+    margin-bottom: 0;
+  }
+
+  .sidebar hr {
+    margin: 0.75rem 0;
+  }
+
+  .sidebar hr:last-of-type {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    display: inline-block;
+    order: 1;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .nav-toggle-label::after {
+    content: ' +';
+  }
+
+  #nav-toggle:checked + .nav-toggle-label::after {
+    content: ' \2013';
+  }
+
+  .about-link {
+    order: 2;
+    margin-top: 0;
+  }
+
+  /* project list: hidden until "Projects +" is tapped */
+  .project-list {
+    display: none;
+    order: 3;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 0.2rem 1rem;
+    margin-top: 0.5rem;
+  }
+
+  #nav-toggle:checked ~ .project-list {
+    display: flex;
+  }
+
+  .project-list li {
+    margin: 0;
+  }
+
+  /* homepage: list always open, no toggle, About after the list */
+  .home .nav-toggle-label {
+    display: none;
+  }
+
+  .home .project-list {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .home .sidebar hr:last-of-type {
+    display: block;
+    order: 4;
+  }
+
+  .home .about-link {
+    order: 5;
+    margin-top: 0;
+  }
+
+  .project-display {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  /* Larry's p5 sketches were fixed at 500px wide */
+  .p5-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* 3- and 4-column image tables drop to 2 on a phone */
+  .table-cols-3,
+  .table-cols-4 {
+    --table-cols: 2;
+  }
+
+  .image-table {
+    --table-gap: 0.75rem;
+  }
+}
