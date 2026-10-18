@@ -62,8 +62,10 @@ main { padding-top: 56px; }
 .stack img { width: 100%; display: block; }
 .cap { font-size: 14px; color: var(--mute); margin: -2px 0 44px; }
 .cap p { max-width: 60em; }
-.label { display: grid; grid-template-columns: 15rem minmax(0, 1fr); column-gap: 1.5rem; padding-block: 28px 48px; border-top: 1px solid var(--rule); margin-top: 30px; }
-.tomb .m { color: var(--mute); }
+.label { padding-block: 28px 48px; border-top: 1px solid var(--rule); margin-top: 30px; }
+/* tombstone stacked above the text: title line, then the details smaller and grey */
+.tomb { margin-bottom: 24px; }
+.tomb .m { display: block; margin-top: 6px; font-size: 14px; line-height: 1.6; color: var(--mute); max-width: 36em; }
 .text { max-width: 36em; }
 .text p + p { margin-top: 1em; }
 .next { border-top: 1px solid var(--rule); padding-top: 18px; display: flex; justify-content: space-between; gap: 1rem; color: var(--mute); }
@@ -87,7 +89,6 @@ main { padding-top: 56px; }
   main { padding-top: 36px; }
   .hrow { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
   .hrow-t { font-size: 17px; }
-  .label { grid-template-columns: minmax(0, 1fr); row-gap: 14px; }
   .grid.three, .p5row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .info li { grid-template-columns: 5.5rem minmax(0, 1fr); column-gap: 0.75rem; }
 }
