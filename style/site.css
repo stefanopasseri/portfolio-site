@@ -45,8 +45,8 @@ main { padding-top: 56px; }
 .hrow-t .y { font-size: 16px; margin-top: 2px; }
 .hrow:hover .t { color: var(--mute); }
 
-/* thumbnails: one 4:3 frame for every work; the still and its clip are cropped to fill it */
-.thumb { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--wait); }
+/* thumbnails: one 16:9 frame for every work, the shape of the Ghost, Double and Larry clips */
+.thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--wait); }
 .thumb img, .thumb video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .thumb video { opacity: 0; }
 .thumb.started video { opacity: 1; }
