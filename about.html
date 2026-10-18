@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Info — Stefano Passeri</title>
-  <meta name="description" content="Stefano Passeri, artist. Selected work, exhibitions and contact." />
-  <link rel="stylesheet" href="style/reset.css" />
-  <link rel="stylesheet" href="style/base.css" />
-  <link rel="stylesheet" href="style/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="description" content="Stefano Passeri, artist. Exhibitions, talks, writing and contact.">
+  <meta property="og:title" content="Info — Stefano Passeri">
+  <meta property="og:description" content="Stefano Passeri, artist. Exhibitions, talks, writing and contact.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/ghost.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
-  <div class="wrapper">
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content info">
-        <h2>Info</h2>
-
-        <p class="info-contact">
-          <a href="mailto:stefanoppasseri@gmail.com">Contact</a>&emsp;<a href="https://www.instagram.com/stefanoppasseri/">Instagram</a>
-        </p>
-
-        <h3>Exhibitions</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2027</span><span>Solo exhibition, Crowstep Projects, Washington, DC (September)</span></li>
-          <li><span class="info-year">2027</span><span><em>Apparition Apparatus</em>, Crowstep Projects, Washington, DC (April)</span></li>
-          <li><span class="info-year">2027</span><span><em>Common Things: Art and Objects in Public Life</em>, American University Museum at the Katzen Arts Center, Washington, DC (February)</span></li>
-          <li><span class="info-year">2026</span><span><em>Visual Culture 2026</em>, CICA Museum, Gimpo-si, South Korea</span></li>
-          <li><span class="info-year">2026</span><span>Pop-up exhibition, Cafritz Foundation Arts Center, Montgomery College, Silver Spring, MD</span></li>
-        </ul>
-
-        <h3>Talks</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2026</span><span>“A Working Theory of a Purposeless Object,” International Symposium for Visual Culture, Cafritz Foundation Arts Center, Montgomery College, Silver Spring, MD</span></li>
-        </ul>
-
-        <h3>Writing</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2026</span><span>“A Very Close Reading of a Very Strange Object,” catalog essay, International Symposium for Visual Culture</span></li>
-        </ul>
-
-        <h3>Grants</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2025</span><span>Clarvit Endowed Faculty Fund in Art and Design Award, University of Maryland</span></li>
-        </ul>
-
-        <h3>Education</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2013</span><span>M.Arch, Southern California Institute of Architecture (SCI-Arc), Los Angeles</span></li>
-          <li><span class="info-year">2010</span><span>BSc Architecture, The Bartlett School of Architecture, University College London</span></li>
-          <li><span class="info-year">2007</span><span>MA Philosophy, Birkbeck, University of London</span></li>
-          <li><span class="info-year">2005</span><span>BA Fine Art, University of London (Roehampton)</span></li>
-        </ul>
-
-        <h3>Teaching</h3>
-        <ul class="info-list">
-          <li><span class="info-year">2021–</span><span>University of Maryland, College Park</span></li>
-          <li><span class="info-year">2015–2021</span><span>Rensselaer Polytechnic Institute, Troy, NY</span></li>
-          <li><span class="info-year">2011–2015</span><span>Southern California Institute of Architecture (SCI-Arc), Los Angeles</span></li>
-        </ul>
-      </div>
-    </main>
-  </div>
-  <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html" aria-current="page">Info</a></header>
+  <main class="info">
+    <p class="contact"><a href="mailto:stefanoppasseri@gmail.com">Contact</a><a href="https://www.instagram.com/stefanoppasseri/">Instagram</a></p>
+    <h2>Exhibitions</h2>
+    <ul>
+      <li><span class="y">2027</span><span>Solo exhibition, Crowstep Projects, Washington, DC (September)</span></li>
+      <li><span class="y">2027</span><span><em>Apparition Apparatus</em>, Crowstep Projects, Washington, DC (April)</span></li>
+      <li><span class="y">2027</span><span><em>Common Things: Art and Objects in Public Life</em>, American University Museum at the Katzen Arts Center, Washington, DC (February)</span></li>
+      <li><span class="y">2026</span><span><em>Visual Culture 2026</em>, CICA Museum, Gimpo-si, South Korea</span></li>
+      <li><span class="y">2026</span><span>Pop-up exhibition, Cafritz Foundation Arts Center, Montgomery College, Silver Spring, MD</span></li>
+    </ul>
+    <h2>Talks</h2>
+    <ul>
+      <li><span class="y">2026</span><span>“A Working Theory of a Purposeless Object,” International Symposium for Visual Culture, Cafritz Foundation Arts Center, Montgomery College, Silver Spring, MD</span></li>
+    </ul>
+    <h2>Writing</h2>
+    <ul>
+      <li><span class="y">2026</span><span>“A Very Close Reading of a Very Strange Object,” catalog essay, International Symposium for Visual Culture</span></li>
+    </ul>
+    <h2>Grants</h2>
+    <ul>
+      <li><span class="y">2025</span><span>Clarvit Endowed Faculty Fund in Art and Design Award, University of Maryland</span></li>
+    </ul>
+    <h2>Education</h2>
+    <ul>
+      <li><span class="y">2013</span><span>M.Arch, Southern California Institute of Architecture (SCI-Arc), Los Angeles</span></li>
+      <li><span class="y">2010</span><span>BSc Architecture, The Bartlett School of Architecture, University College London</span></li>
+      <li><span class="y">2007</span><span>MA Philosophy, Birkbeck, University of London</span></li>
+      <li><span class="y">2005</span><span>BA Fine Art, University of London (Roehampton)</span></li>
+    </ul>
+    <h2>Teaching</h2>
+    <ul>
+      <li><span class="y">2021–</span><span>University of Maryland, College Park</span></li>
+      <li><span class="y">2015–2021</span><span>Rensselaer Polytechnic Institute, Troy, NY</span></li>
+      <li><span class="y">2011–2015</span><span>Southern California Institute of Architecture (SCI-Arc), Los Angeles</span></li>
+    </ul>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>

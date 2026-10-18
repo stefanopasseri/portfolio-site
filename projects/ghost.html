@@ -1,160 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghost — Stefano Passeri</title>
-
-  <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/base.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ghost of Ghost — Stefano Passeri</title>
+  <meta name="description" content="Ghost of Ghost, 2026. Stefano Passeri.">
+  <meta property="og:title" content="Ghost of Ghost — Stefano Passeri">
+  <meta property="og:description" content="Ghost of Ghost, 2026. Stefano Passeri.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/ghost.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/projects/ghost.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
-
 <body>
-  <div class="wrapper">
-    
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content">
-
-        <!--top of page-->
-        <h2>Ghost of Ghost</h2>
-        <p class="project-blurb">
-          Modified Oldenburg sculpture.
-        </p>
-
-        <!--hero video - FIX BELOW: override global .hero-image video { height: 100% }-->
-        <div class="hero-image is-photo" style="margin-bottom: 5rem;">
-          <video 
-            src="../images/ghost/ghost-hero.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="hero-video fix-double-video" 
-            ></video>
-        </div>
-
-        <hr class="project-hr" />
-
-        <p class="project-blurb">
-          Ghost of Ghost is a full-scale modified reconstruction of Claes Oldenburg and Patty Mucha’s 
-          1964 work Soft Light Switches—Ghost Version-II. The modified sculpture retains the original's 
-          oversized slumped fabric form while introducing an internal mechanism of air, valves, motors, and 
-          electronics. Over the course of approximately an hour, the piece slowly inflates, sags, and partially 
-          collapses while the two toggles intermittently change position. These movements occur gradually and 
-          unevenly, sometimes becoming apparent only after looking away and returning. Although the addition 
-          of a mechanism brings the sculpture strangely closer to the object it represents, the familiar 
-          wall switch, its behavior remains detached from any useful function: no light is switched on, 
-          and the movements produce no clear result. Instead, the sculpture passes through a succession 
-          of subtly different states, at times appearing active and responsive and at others nearly inert. 
-          What initially presents as a static soft sculpture becomes difficult to hold as a stable image, 
-          changing slowly enough that it is not always clear when, or whether, something has happened.
-        </p>
-
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/ghost/ghost-img-1.jpg" alt="Ghost image">
-        </div>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/ghost/ghost-img-2.jpg" alt="Ghost image">
-        </div>
-
-        <p class="caption">Inflated and deflated states.</p>
-
-                <!--video-->
-        <div class="project-image image-free is-photo gap-lg">
-          <video 
-            src="../images/ghost/ghost-clip-2.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="project-video">
-          </video>
-        </div>
-
-        <!--image table: 3 rows x 2 columns, square cells-->
-        <!--to reuse: add/remove cells (rows appear automatically), or add table-cols-3 / table-gap-sm etc.-->
-        <div class="image-table">
-          <div class="image-table__cell">
-            <video src="../images/ghost/details-video/ghost-clip-detail-1.mp4" autoplay muted loop playsinline preload="auto"></video>
-          </div>
-          <div class="image-table__cell">
-            <video src="../images/ghost/details-video/ghost-clip-detail-3.mp4" autoplay muted loop playsinline preload="auto"></video>
-          </div>
-
-          <div class="image-table__cell">
-            <video src="../images/ghost/details-video/ghost-clip-detail-4.mp4" autoplay muted loop playsinline preload="auto"></video>
-          </div>
-          <div class="image-table__cell">
-            <video src="../images/ghost/details-video/ghost-clip-detail-2.mp4" autoplay muted loop playsinline preload="auto"></video>
-          </div>
-        </div>
-
-        <p class="caption">
-          Details of behavioral states. Top full-width clip: yoga mode. Table, clockwise from
-          from top left: hyperventilating, dreaming, snoozing, deep breath.
-        </p>
-
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/ghost/ghost-img-4.jpg" alt="Ghost image">
-        </div>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/ghost/ghost-img-5.jpg" alt="Ghost image">
-        </div>
-
-        <p class="caption">Disassembled kit of parts and half-scale single soft switch with its pattern. </p>
-
-
-
-        <!--image table: 3 rows x 2 columns, square cells-->
-        <!--to reuse: add/remove cells (rows appear automatically), or add table-cols-3 / table-gap-sm etc.-->
-        <div class="image-table">
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-1.jpg" alt="Ghost image"></div>
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-2.jpg" alt="Ghost image"></div>
-
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-3.jpg" alt="Ghost image"></div>
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-4.jpg" alt="Ghost image"></div>
-
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-5.jpg" alt="Ghost image"></div>
-          <div class="image-table__cell"><img src="../images/ghost/details/ghost-detail-6.jpg" alt="Ghost image"></div>
-        </div>
-
-        <p class="caption">
-          Details of the hardware, mechanical, and electrical components on the back of the sculpture.
-          From top left: inflatable bladder showing fit with muslin front, kam-snap attachments, 
-          and Velcro strap connection to metal frame. Repurposed yard inflatable fan with custom attachments
-          connecting to main bladder. Microcontroller housing. Toggle rear showing custom motor shaft and
-          attachments. Valve to motor to plywood frame prototype. Soft toggle showing kam-snap connections
-          for motor shaft coupling.
-        </p>
-
-
-
-    <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('../partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
-
-
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html">Info</a></header>
+  <main>
+    <p class="ptitle">Ghost of Ghost <span class="y">2026</span></p>
+    <div class="fig"><video src="/images/ghost/ghost-hero.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Ghost of Ghost inflating and deflating"></video></div>
+    <div class="grid">
+      <img src="/images/ghost/ghost-img-1.jpg" alt="Ghost of Ghost, inflated">
+      <img src="/images/ghost/ghost-img-2.jpg" alt="Ghost of Ghost, deflated">
+    </div>
+    <div class="cap"><p>Inflated, and deflated.</p></div>
+    <section class="label">
+      <div class="tomb"><em>Ghost of Ghost</em>, 2026<br><span class="m">Muslin, ripstop nylon, steel conduit, casters, repurposed blower fan, vacuum hose, butterfly valves, motors, electronics, Velcro<br>84 × 48 × 16 in.<br>One-hour cycle, with a ten-minute pause</span></div>
+      <div class="text"><p>In 1964 Claes Oldenburg and Patty Mucha made <em>Soft Light Switches — “Ghost” Version II</em>: an ordinary wall switch, enlarged, sewn in canvas and stripped of its function. Ghost of Ghost is a full-size reconstruction that leaves the function out and puts a mechanism back in. A light switch is already a mechanism, so the sculpture is pulled two ways at once, toward the ordinary object and further away from it.</p>
+        <p>Over about an hour it fills, sags, partly collapses and flips its toggles. No light comes on.</p></div>
+    </section>
+    <div class="fig"><video src="/images/ghost/ghost-clip-2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Yoga mode"></video></div>
+    <div class="cap"><p>Yoga mode.</p></div>
+    <div class="grid">
+      <video src="/images/ghost/details-video/ghost-clip-detail-1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Hyperventilating"></video>
+      <video src="/images/ghost/details-video/ghost-clip-detail-3.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Dreaming"></video>
+      <video src="/images/ghost/details-video/ghost-clip-detail-4.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Deep breath"></video>
+      <video src="/images/ghost/details-video/ghost-clip-detail-2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Snoozing"></video>
+    </div>
+    <div class="cap"><p>Hyperventilating, dreaming, snoozing, deep breath (clockwise from top left).</p></div>
+    <div class="fig"><img src="/images/ghost/ghost-img-3.jpg" alt="Ghost of Ghost from behind" loading="lazy"></div>
+    <div class="cap"><p>From behind. Lean around it and the mechanism is in plain view.</p></div>
+    <div class="fig"><img src="/images/ghost/ghost-img-4.jpg" alt="Kit of parts" loading="lazy"></div>
+    <div class="fig"><img src="/images/ghost/ghost-img-5.jpg" alt="Pattern pieces and a half-scale switch" loading="lazy"></div>
+    <div class="cap"><p>Kit of parts. Pattern pieces and a half-scale single switch.</p></div>
+    <div class="grid three">
+      <img src="/images/ghost/details/ghost-detail-1.jpg" alt="Frame and strap" loading="lazy">
+      <img src="/images/ghost/details/ghost-detail-2.jpg" alt="Fan" loading="lazy">
+      <img src="/images/ghost/details/ghost-detail-3.jpg" alt="Microcontroller" loading="lazy">
+      <img src="/images/ghost/details/ghost-detail-4.jpg" alt="Toggle motor coupling" loading="lazy">
+      <img src="/images/ghost/details/ghost-detail-5.jpg" alt="Valve and motor prototype" loading="lazy">
+      <img src="/images/ghost/details/ghost-detail-6.jpg" alt="Soft toggle" loading="lazy">
+    </div>
+    <div class="cap"><p>The back: bladder and frame, a fan from a yard inflatable, the microcontroller, a toggle’s motor, a valve prototype, a soft toggle. The soft parts hold onto the hard ones with snap fasteners made for baby clothes. Glue failed; duct tape held but looked terrible.</p></div>
+    <nav class="next"><a href="/">Index</a><a href="/projects/double.html">Double (December 1612)</a></nav>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>

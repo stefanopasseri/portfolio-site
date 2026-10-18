@@ -1,85 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Gray Box — Stefano Passeri</title>
-
-  <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/base.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="description" content="Gray Box, 2025 (proposal). Stefano Passeri.">
+  <meta property="og:title" content="Gray Box — Stefano Passeri">
+  <meta property="og:description" content="Gray Box, 2025 (proposal). Stefano Passeri.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/graybox.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/projects/graybox.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
-
 <body>
-  <div class="wrapper">
-    
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content">
-
-        <!--top of page-->
-        <h2>Gray Box</h2>
-        <p class="project-blurb">
-          Mixed-media sculpture.
-        </p>
-
-        <!--hero video - FIX BELOW: override global .hero-image video { height: 100% }-->
-        <div class="hero-image is-photo" style="margin-bottom: 5rem;">
-          <video 
-            src="../images/graybox/graybox-hero.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="hero-video fix-double-video" 
-            ></video>
-        </div>
-
-        <hr class="project-hr" />
-
-        <!-- <p class="project-blurb">
-          Double (December 1612) consists of two identical, wall-mounted cubic volumes. At first 
-          the forms appear sealed and fully reflective, returning the viewer to themselves. 
-          Over time, an internal light intermittently reveals faintly glowing text embedded within 
-          the volume, visible only from certain angles and after sustained looking. 
-          When the light is on it remains intermittent, never resolving into a stable pattern, 
-          and may alternately read as a deliberate feature or slightly malfunctioning.
-          The two forms differ only in a subtle variation in the rhythm of this flicker, 
-          a misalignment that is difficult to register but slowly unsettles their superficial 
-          sameness. What presents as a monolithic, self-contained pair begins to shift behaviorally, 
-          moving between reflection and inscription, flatness and depth, sculptural stillness and 
-          electrical twinkle without ever fully resolving.
-        </p> -->
-
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/graybox/graybox-img-1.jpg" alt="Gray Box">
-        </div>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/graybox/graybox-img-2.jpg" alt="Gray Box">
-        </div>
-
-
-
-    <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('../partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
-
-
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html">Info</a></header>
+  <main>
+    <p class="ptitle">Gray Box <span class="y">2025</span></p>
+    <div class="fig"><video src="/images/graybox/graybox-hero.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Gray Box, rendering"></video></div>
+    <div class="cap"><p>Rendering.</p></div>
+    <section class="label">
+      <div class="tomb"><em>Gray Box</em>, 2025<br><span class="m">Proposal<br>Painted wood, acrylic, light, electronics<br>About 20 × 17 × 14 in.</span></div>
+      <div class="text"></div>
+    </section>
+    <div class="fig"><img src="/images/graybox/graybox-img-1.jpg" alt="Gray Box, rendering" loading="lazy"></div>
+    <div class="fig"><img src="/images/graybox/graybox-img-2.jpg" alt="Gray Box, rendering" loading="lazy"></div>
+    <div class="cap"><p>Renderings.</p></div>
+    <nav class="next"><a href="/projects/posture.html">A Question of Posture</a><a href="/">Index</a></nav>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>

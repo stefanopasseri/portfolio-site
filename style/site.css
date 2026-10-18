@@ -1,0 +1,98 @@
+/* stefanopasseri.com
+   One centered column, 1040px at most. Text kept to a reading length inside it.
+   Used by the home page, Info and the five current project pages.
+   (The older, unlisted project pages still use main.css.) */
+
+:root {
+  --paper: #ffffff;
+  --ink: #1a1a1a;
+  --mute: #86857f;
+  --rule: #dcdbd6;
+  --wait: #e9e8e4;
+  --font: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  /* the cursor: a small vertical blp with a white edge, pointing from its top end */
+  --blp: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='32' viewBox='0 0 18 32'%3E%3Crect x='3' y='3' width='12' height='26' rx='6' fill='%23141414' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E") 9 3;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.5; }
+a { color: inherit; text-decoration: none; cursor: var(--blp), pointer; }
+a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
+img, video { max-width: 100%; }
+
+/* page frame */
+.site { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-block: 22px 120px; }
+.site > * { max-width: 1040px; margin-left: auto; margin-right: auto; }
+
+/* header: name, then Info */
+.top { font-size: 19px; display: flex; gap: 2rem; align-items: baseline; }
+.top a:hover { color: var(--mute); }
+.top a[aria-current="page"] { color: var(--mute); }
+main { padding-top: 56px; }
+
+.y { color: var(--mute); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* name: on hover the letters sag a pixel or two, unevenly, and recover */
+.name .ch { display: inline-block; transition: transform 1.6s cubic-bezier(.3,.7,.2,1); }
+.name:hover .ch { transform: translateY(var(--d, 1px)); transition-duration: 0.9s; }
+
+/* home: one work per row, title and year beside a modest image */
+.hrow { display: grid; grid-template-columns: minmax(0, 40rem) minmax(0, 1fr); column-gap: 2rem; padding-block: 28px; border-top: 1px solid var(--rule); align-items: start; }
+.hrow:first-child { border-top: none; padding-top: 0; }
+.hrow-t { display: flex; flex-direction: column; font-size: 19px; line-height: 1.35; }
+.hrow-t .y { font-size: 16px; margin-top: 2px; }
+.hrow:hover .t { color: var(--mute); }
+
+/* thumbnails: one 4:3 frame for every work; the still and its clip are cropped to fill it */
+.thumb { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--wait); }
+.thumb img, .thumb video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.thumb video { opacity: 0; }
+.thumb.started video { opacity: 1; }
+
+/* project pages */
+.ptitle { margin-bottom: 24px; }
+.fig { margin-bottom: 14px; }
+.fig img, .fig video { width: 100%; display: block; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid img, .grid video { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+.stack { display: grid; gap: 5px; margin-bottom: 14px; }
+.stack img { width: 100%; display: block; }
+.cap { font-size: 14px; color: var(--mute); margin: -2px 0 44px; }
+.cap p { max-width: 60em; }
+.label { display: grid; grid-template-columns: 15rem minmax(0, 1fr); column-gap: 1.5rem; padding-block: 28px 48px; border-top: 1px solid var(--rule); margin-top: 30px; }
+.tomb .m { color: var(--mute); }
+.text { max-width: 36em; }
+.text p + p { margin-top: 1em; }
+.next { border-top: 1px solid var(--rule); padding-top: 18px; display: flex; justify-content: space-between; gap: 1rem; color: var(--mute); }
+.next a:hover { color: var(--ink); }
+.p5row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
+.p5c canvas { width: 100% !important; height: auto !important; display: block; }
+
+/* info */
+.contact { margin-bottom: 40px; display: flex; gap: 1.5rem; }
+.contact a { text-decoration: underline; text-underline-offset: 3px; }
+.contact a:hover { color: var(--mute); }
+.info h2 { font-size: 16px; font-weight: 500; letter-spacing: 0.01em; margin: 36px 0 10px; }
+.info ul { list-style: none; border-top: 1px solid var(--rule); }
+.info li { display: grid; grid-template-columns: 6.5rem minmax(0, 44rem); column-gap: 1.5rem; padding-block: 7px; border-bottom: 1px solid var(--rule); }
+
+/* idle: after a long while with no input, one image sinks 2px and stays */
+.settle { transform: translateY(2px); transition: transform 9s ease-in; }
+
+@media (max-width: 700px) {
+  .site { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 80px; }
+  main { padding-top: 36px; }
+  .hrow { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
+  .hrow-t { font-size: 17px; }
+  .label { grid-template-columns: minmax(0, 1fr); row-gap: 14px; }
+  .grid.three, .p5row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .info li { grid-template-columns: 5.5rem minmax(0, 1fr); column-gap: 0.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .name .ch, .name:hover .ch { transform: none; transition: none; }
+  .settle { transform: none; transition: none; }
+}
