@@ -31,7 +31,7 @@ img, video { max-width: 100%; }
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper);
   padding-block: 12px; transition: transform 0.35s ease; }
 .top.away { transform: translateY(calc(-100% - env(safe-area-inset-top, 0px))); }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 11; background: var(--paper); }
+body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top, 0px); z-index: 11; background: var(--paper); }
 .top a:hover { color: var(--mute); }
 .top a[aria-current="page"] { color: var(--mute); }
 main { padding-top: 56px; }
@@ -51,9 +51,13 @@ main { padding-top: 56px; }
 
 /* thumbnails: one 16:9 frame for every work, the shape of the Ghost, Double and Larry clips */
 .thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--wait); }
-.thumb img, .thumb video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.thumb img, .thumb video { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
 .thumb video { opacity: 0; }
 .thumb.started video { opacity: 1; }
+@supports not (aspect-ratio: 16 / 9) {
+  .thumb { height: 0; padding-top: 56.25%; }
+  .grid img, .grid video { height: auto; }
+}
 
 /* project pages */
 .ptitle { margin-bottom: 24px; }
@@ -90,6 +94,10 @@ main { padding-top: 56px; }
 /* idle: after a long while with no input, one image sinks 2px and stays */
 .settle { transform: translateY(2px); transition: transform 9s ease-in; }
 
+@media (max-width: 1000px) and (min-width: 701px) {
+  .hrow { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); column-gap: 1.5rem; }
+  .label { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); column-gap: 2rem; }
+}
 @media (max-width: 700px) {
   .label { grid-template-columns: minmax(0, 1fr); row-gap: 22px; }
   .tomb { max-width: none; }
