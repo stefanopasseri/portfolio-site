@@ -20,6 +20,19 @@
     }
   }
 
+  // Header: hides while scrolling down, comes back on any scroll up (always shown near the top).
+  var top = document.querySelector('.top');
+  if (top) {
+    var last = window.scrollY;
+    window.addEventListener('scroll', function () {
+      var y = window.scrollY, d = y - last;
+      if (y < 80) top.classList.remove('away');
+      else if (d > 6) top.classList.add('away');
+      else if (d < -6) top.classList.remove('away');
+      if (Math.abs(d) > 6) last = y;
+    }, { passive: true });
+  }
+
   // 2. Home thumbnails: a still from each work's clip. Resting the pointer on a row plays the clip
   //    from there; moving away pauses it wherever it is. A clip loads only the first time.
   document.querySelectorAll('.hrow').forEach(function (row) {

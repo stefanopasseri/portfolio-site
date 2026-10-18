@@ -23,11 +23,15 @@ a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
 img, video { max-width: 100%; }
 
 /* page frame */
-.site { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-block: 22px 120px; }
+.site { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-block: 10px 120px; }
 .site > * { max-width: 920px; margin-left: auto; margin-right: auto; }
 
-/* header: name, then Info */
-.top { font-size: 19px; display: flex; gap: 2rem; align-items: baseline; }
+/* header: name, then Info. In place at the top; scrolling down hides it, scrolling up brings it back */
+.top { font-size: 19px; display: flex; gap: 2rem; align-items: baseline;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper);
+  padding-block: 12px; transition: transform 0.35s ease; }
+.top.away { transform: translateY(calc(-100% - env(safe-area-inset-top, 0px))); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 11; background: var(--paper); }
 .top a:hover { color: var(--mute); }
 .top a[aria-current="page"] { color: var(--mute); }
 main { padding-top: 56px; }
@@ -87,7 +91,7 @@ main { padding-top: 56px; }
 @media (max-width: 700px) {
   .label { grid-template-columns: minmax(0, 1fr); row-gap: 22px; }
   .tomb { max-width: none; }
-  .site { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 80px; }
+  .site { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 6px 80px; }
   main { padding-top: 36px; }
   .hrow { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
   .hrow-t { font-size: 17px; }
@@ -96,6 +100,7 @@ main { padding-top: 56px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .top { transition: none; }
   .name .ch, .name:hover .ch { transform: none; transition: none; }
   .settle { transform: none; transition: none; }
 }
