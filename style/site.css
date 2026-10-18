@@ -62,10 +62,10 @@ main { padding-top: 56px; }
 .stack img { width: 100%; display: block; }
 .cap { font-size: 14px; color: var(--mute); margin: -2px 0 44px; }
 .cap p { max-width: 60em; }
-.label { padding-block: 28px 48px; border-top: 1px solid var(--rule); margin-top: 30px; }
-/* tombstone stacked above the text: title line, then the details smaller and grey */
-.tomb { margin-bottom: 24px; }
-.tomb .m { display: block; margin-top: 6px; font-size: 14px; line-height: 1.6; color: var(--mute); max-width: 36em; }
+/* label: tombstone on the left, the paragraph set over to the right edge of the column (still left-aligned) */
+.label { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 34rem); column-gap: 3rem; padding-block: 28px 48px; border-top: 1px solid var(--rule); margin-top: 30px; }
+.tomb { max-width: 21rem; }
+.tomb .m { display: block; margin-top: 6px; font-size: 14px; line-height: 1.6; color: var(--mute); }
 .text { max-width: 36em; }
 .text p + p { margin-top: 1em; }
 .next { border-top: 1px solid var(--rule); padding-top: 18px; display: flex; justify-content: space-between; gap: 1rem; color: var(--mute); }
@@ -85,6 +85,8 @@ main { padding-top: 56px; }
 .settle { transform: translateY(2px); transition: transform 9s ease-in; }
 
 @media (max-width: 700px) {
+  .label { grid-template-columns: minmax(0, 1fr); row-gap: 22px; }
+  .tomb { max-width: none; }
   .site { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 80px; }
   main { padding-top: 36px; }
   .hrow { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
