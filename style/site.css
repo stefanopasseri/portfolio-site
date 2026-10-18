@@ -1,5 +1,5 @@
 /* stefanopasseri.com
-   One centered column, 1040px at most. Text kept to a reading length inside it.
+   One centered column, 920px at most. Text kept to a reading length inside it.
    Used by the home page, Info and the five current project pages.
    (The older, unlisted project pages still use main.css.) */
 
@@ -24,7 +24,7 @@ img, video { max-width: 100%; }
 
 /* page frame */
 .site { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-block: 22px 120px; }
-.site > * { max-width: 1040px; margin-left: auto; margin-right: auto; }
+.site > * { max-width: 920px; margin-left: auto; margin-right: auto; }
 
 /* header: name, then Info */
 .top { font-size: 19px; display: flex; gap: 2rem; align-items: baseline; }
