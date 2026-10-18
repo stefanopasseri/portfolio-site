@@ -1,79 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Twisted Torus — Stefano Passeri</title>
-
-  <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/base.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="description" content="Twisted Torus, 2014. Stefano Passeri.">
+  <meta property="og:title" content="Twisted Torus — Stefano Passeri">
+  <meta property="og:description" content="Twisted Torus, 2014. Stefano Passeri.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/torus.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/projects/torus.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
-
 <body>
-  <div class="wrapper">
-    
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content">
-
-        <!--top of page-->
-        <h2>Twisted Torus</h2>
-        <p class="project-blurb">
-          Mixed-media sculptures based on geometric projection and distortion.
-        </p>
-
-        <!--hero image-->
-        <div class="hero-image project-hero is-photo">
-          <img src = "../images/torus/torus-hero.jpg" alt="Twisted Torus hero">
-        </div>
-
-        <hr class="project-hr" />
-
-        <p class="project-blurb">
-          Twisted Torus is a series of sculptural studies investigating the geometry of 
-          the torus through digital modeling and physical fabrication. Twisting the surface and 
-          reshaping the profile generates forms where a complex interior emerges from a 
-          distorted but continuous exterior shell. Using curved projection techniques,
-          the exterior is pierced to reveal part of the interior.
-        </p>
-
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/torus/torus-img-1.jpg" alt="Twisted Torus image">
-        </div>
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/torus/torus-img-2.jpg" alt="Twisted Torus image">
-        </div>
-        <div class="project-image image-free is-photo gap-lg">
-          <img src = "../images/torus/torus-img-3.jpg" alt="Twisted Torus image">
-        </div>
-        <div class="project-image image-free is-photo gap-none">
-          <img src = "../images/torus/torus-process-1.jpg" alt="Twisted Torus process image">
-        </div>
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/torus/torus-process-2.jpg" alt="Twisted Torus process image">
-        </div>
-        <p class="caption">Process diagrams showing the development of the form and 
-          the articulation of the interior geometry.</p>
-      </div>
-    </main>
-  </div>
-
-    <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('../partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
-
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html">Info</a></header>
+  <main>
+    <p class="ptitle">Twisted Torus <span class="y">2014</span></p>
+    <div class="fig"><img src="/images/torus/torus-hero.jpg" alt="Twisted Torus" loading="lazy"></div>
+    <section class="label">
+      <div class="tomb"><em>Twisted Torus</em>, 2014<br><span class="m">Series of sculptures<br>Mixed media</span></div>
+      <div class="text"><p>Twisted Torus is a series of sculptural studies of the torus, developed through digital modeling and physical fabrication. Twisting the surface and reshaping the profile produces forms in which a complex interior grows inside a distorted but continuous outer shell. Curved projection techniques then pierce the exterior to reveal part of that interior.</p></div>
+    </section>
+    <div class="fig"><img src="/images/torus/torus-img-1.jpg" alt="Twisted Torus" loading="lazy"></div>
+    <div class="fig"><img src="/images/torus/torus-img-2.jpg" alt="Twisted Torus" loading="lazy"></div>
+    <div class="fig"><img src="/images/torus/torus-img-3.jpg" alt="Twisted Torus" loading="lazy"></div>
+    <div class="grid free">
+      <img src="/images/torus/torus-process-1.jpg" alt="Process diagrams" loading="lazy">
+      <img src="/images/torus/torus-process-2.jpg" alt="Process diagrams" loading="lazy">
+    </div>
+    <div class="cap"><p>Process diagrams showing the development of the form and the articulation of the interior geometry.</p></div>
+    <nav class="next"><a href="/projects/graybox.html">Gray Box</a><a href="/projects/characters.html">Cast of Characters</a></nav>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>

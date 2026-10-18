@@ -61,6 +61,8 @@ main { padding-top: 56px; }
 .fig img, .fig video { width: 100%; display: block; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
 .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.free { align-items: start; }
+.grid.free img { aspect-ratio: auto; object-fit: initial; }
 .grid img, .grid video { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
 .stack { display: grid; gap: 5px; margin-bottom: 14px; }
 .stack img { width: 100%; display: block; }

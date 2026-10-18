@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Characters — Stefano Passeri</title>
-
-  <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/base.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Cast of Characters — Stefano Passeri</title>
+  <meta name="description" content="Cast of Characters, 2013. Stefano Passeri.">
+  <meta property="og:title" content="Cast of Characters — Stefano Passeri">
+  <meta property="og:description" content="Cast of Characters, 2013. Stefano Passeri.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/characters.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/projects/characters.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
-
 <body>
-  <div class="wrapper">
-    
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content">
-
-        <!--top of page-->
-        <h2>Cast of Characters</h2>
-        <p class="project-blurb">
-          Extruded Polystyrene Sculptures.
-        </p>
-
-        <!--hero image-->
-        <div class="hero-image project-hero is-photo">
-          <img src = "../images/characters/characters-hero.jpg" alt="Mask hero">
-        </div>
-
-        <hr class="project-hr" />
-
-        <p class="project-blurb">
-          Cast of Characters is a series of polystyrene sculptures cut from large blocks 
-          using robotic hot-wire fabrication. The process yields sharp, intricate profiles 
-          that transform a familiar industrial material into unexpected forms. 
-          The work emphasizes a tension between precision cutting and irregular figuration, 
-          presenting the foam not as disposable matter but as a medium for sculptural inquiry. 
-          The result is a play between material banality and formal interest, 
-          prompting viewers to reconsider the possibilities of process, surface, and scale.
-        </p>
-
-        <p class="project-blurb">
-          In collaboration with Anass Benachmi and David Eskenazi
-        </p>
-
-        <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "../images/characters/characters-img-1.jpg" alt="Characters image 1">
-        </div>
-        <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "../images/characters/characters-img-2.jpg" alt="Characters image 2">
-        </div>
-        <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "../images/characters/characters-img-3.jpg" alt="Characters image 3">
-        </div>
-        <div class="project-image image-2x3 is-photo gap-md">
-          <img src = "../images/characters/characters-img-4.jpg" alt="Characters image 4">
-        </div>
-
-        <div class="project-image image-3x2 is-photo gap-none">
-          <img src = "../images/characters/characters-img-5.jpg" alt="Characters image 5">
-        </div>
-        <p class="caption">
-          A robotic arm with a hot wire cutter mounted on it was used to cut the sculptures. 
-        </p>
-
-        <div class="project-image image-3x2 is-photo gap-none">
-          <img src = "../images/characters/characters-img-6.jpg" alt="Characters image 6">
-        </div>
-        <p class="caption">
-          Diagrams showing the design process used in the creation of the sculptures.
-        </p>
-
-      </div>
-    </main>
-  </div>
-
-    <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('../partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
-
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html">Info</a></header>
+  <main>
+    <p class="ptitle">Cast of Characters <span class="y">2013</span></p>
+    <div class="fig"><img src="/images/characters/characters-hero.jpg" alt="Cast of Characters" loading="lazy"></div>
+    <section class="label">
+      <div class="tomb"><em>Cast of Characters</em>, 2013<br><span class="m">Extruded polystyrene, cut with a robotic hot wire<br>In collaboration with Anass Benachmi and David Eskenazi</span></div>
+      <div class="text"><p>Cast of Characters is a series of sculptures cut from large blocks of extruded polystyrene with a hot wire mounted on a robotic arm. The process gives sharp, intricate profiles, and the forms that come out of it are irregular and almost figurative. The foam is treated not as packing material but as something worth carving.</p></div>
+    </section>
+    <div class="grid free">
+      <img src="/images/characters/characters-img-1.jpg" alt="Cast of Characters" loading="lazy">
+      <img src="/images/characters/characters-img-2.jpg" alt="Cast of Characters" loading="lazy">
+      <img src="/images/characters/characters-img-3.jpg" alt="Cast of Characters" loading="lazy">
+      <img src="/images/characters/characters-img-4.jpg" alt="Cast of Characters" loading="lazy">
+    </div>
+    <div class="fig"><img src="/images/characters/characters-img-5.jpg" alt="Robotic arm with hot wire cutter" loading="lazy"></div>
+    <div class="cap"><p>A robotic arm with a hot wire cutter mounted on it was used to cut the sculptures.</p></div>
+    <div class="fig"><img src="/images/characters/characters-img-6.jpg" alt="Design process diagrams" loading="lazy"></div>
+    <div class="cap"><p>Diagrams showing the design process used in the creation of the sculptures.</p></div>
+    <nav class="next"><a href="/projects/torus.html">Twisted Torus</a><a href="/">Index</a></nav>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>
