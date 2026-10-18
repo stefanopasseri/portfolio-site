@@ -1,94 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Double — Stefano Passeri</title>
-
-  <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/base.css" />
-  <link rel="stylesheet" href="../style/main.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="../favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Double (December 1612) — Stefano Passeri</title>
+  <meta name="description" content="Double (December 1612), 2026. Stefano Passeri.">
+  <meta property="og:title" content="Double (December 1612) — Stefano Passeri">
+  <meta property="og:description" content="Double (December 1612), 2026. Stefano Passeri.">
+  <meta property="og:image" content="https://stefanopasseri.com/images/thumbs/double.jpg">
+  <meta property="og:url" content="https://stefanopasseri.com/projects/double.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/style/site.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
-
 <body>
-  <div class="wrapper">
-    
-    <!--nav sidebar now lives in partials/nav - JS snippet at bottom fetches index for each page-->
-    <nav class="sidebar" id="site-nav"></nav>
-
-    <main class="project-display">
-      <div class="project-content">
-
-        <!--top of page-->
-        <h2>Double (December 1612)</h2>
-        <p class="project-blurb">
-          Mixed-media wall-mounted sculpture.
-        </p>
-
-        <!--hero video - FIX BELOW: override global .hero-image video { height: 100% }-->
-        <div class="hero-image is-photo" style="margin-bottom: 5rem;">
-          <video 
-            src="../images/double/double-hero.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="hero-video fix-double-video" 
-            ></video>
-        </div>
-
-        <hr class="project-hr" />
-
-        <p class="project-blurb">
-          Double (December 1612) consists of two identical, wall-mounted cubic volumes. At first 
-          the forms appear sealed and fully reflective, returning the viewer to themselves. 
-          Over time, an internal light intermittently reveals faintly glowing text embedded within 
-          the volume, visible only from certain angles and after sustained looking. 
-          When the light is on it remains intermittent, never resolving into a stable pattern, 
-          and may alternately read as a deliberate feature or slightly malfunctioning.
-          The two forms differ only in a subtle variation in the rhythm of this flicker, 
-          a misalignment that is difficult to register but slowly unsettles their superficial 
-          sameness. What presents as a monolithic, self-contained pair begins to shift behaviorally, 
-          moving between reflection and inscription, flatness and depth, sculptural stillness and 
-          electrical twinkle without ever fully resolving.
-        </p>
-
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/double/double-img-1.jpg" alt="Double image">
-        </div>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/double/double-img-2.jpg" alt="Double image">
-        </div>
-
-        <p class="caption">With the internal light off (top) and on (bottom), revealing the engraved text.</p>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/double/double-img-3.jpg" alt="Double image">
-        </div>
-
-        <!--img-->
-        <div class="project-image image-free is-photo gap-md">
-          <img src = "../images/double/double-img-4.jpg" alt="Double image">
-        </div>
-
-
-    <!--JS snippets that fetches the index for each page-->
-  <script>
-  fetch('../partials/nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('site-nav').innerHTML = data;
-    });
-</script>
-
-
+<div class="site">
+  <header class="top"><a href="/" class="name">Stefano Passeri</a><a href="/about.html">Info</a></header>
+  <main>
+    <p class="ptitle">Double (December 1612) <span class="y">2026</span></p>
+    <div class="fig"><video src="/images/double/double-hero.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Double (December 1612), the light flickering"></video></div>
+    <div class="grid">
+      <img src="/images/double/double-img-1.jpg" alt="Double (December 1612), light off">
+      <img src="/images/double/double-img-2.jpg" alt="Double (December 1612), light on">
+    </div>
+    <div class="cap"><p>Light off, and on.</p></div>
+    <section class="label">
+      <div class="tomb"><em>Double (December 1612)</em>, 2026<br><span class="m">Painted birch, acrylic, mirror, light, electronics<br>11 × 24 × 7 in.<br>One-hour cycle, then off for ten minutes</span></div>
+      <div class="text"><p>A plaque outside 7 rue des Grands-Augustins in Paris records that Picasso lived and worked there, and that the building is the setting of Balzac’s <em>The Unknown Masterpiece</em>. Picasso moved in after reading it. Balzac’s painter, Frenhofer, believes he has made a masterpiece; when others finally see it, it is unreadable.</p>
+        <p>Double is two mirrored boxes. Inside each is a mirror engraved with the plaque’s text, lit intermittently from within, so the inscription and the viewer’s reflection appear on the same surface and then go.</p></div>
+    </section>
+    <div class="fig"><img src="/images/double/double-img-3.jpg" alt="Double (December 1612), side view" loading="lazy"></div>
+    <div class="fig"><img src="/images/double/double-img-4.jpg" alt="Double (December 1612), lit in low light" loading="lazy"></div>
+    <div class="cap"><p>Side view. Lit, in low light.</p></div>
+    <nav class="next"><a href="/projects/ghost.html">Ghost of Ghost</a><a href="/projects/larry.html">Larry</a></nav>
+  </main>
+</div>
+<script src="/script/site.js"></script>
 </body>
 </html>
