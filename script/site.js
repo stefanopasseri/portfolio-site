@@ -36,7 +36,7 @@
   // 2. Home. With a pointer: pointing at a title opens that work's clip (a photo for works without one,
   //    or if motion is reduced) just under the title, behind the list; leaving the title closes it.
   //    Clips are made once and kept, so coming back to a title continues its clip.
-  //    On touch screens: one photo under the list, chosen at random on each visit.
+  //    On touch screens (no hover): just the list, no picture.
   var pick = document.getElementById('pick');
   if (pick) {
     var M = '/images/index/';
@@ -81,10 +81,7 @@
         a.addEventListener('mouseleave', close);
       });
     } else {
-      var keys = Object.keys(WORKS), k = keys[Math.floor(Math.random() * keys.length)];
-      pick.removeAttribute('aria-hidden');
-      pick.innerHTML = '<a href="/projects/' + k + '.html"><img src="' + M + k + '.jpg" alt="' + WORKS[k][0] + '"></a>' +
-        '<figcaption><a href="/projects/' + k + '.html">' + WORKS[k][0] + '</a></figcaption>';
+      pick.remove();
     }
   }
 
