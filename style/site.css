@@ -1,6 +1,6 @@
 /* stefanopasseri.com
    One centered column, 920px at most. Text kept to a reading length inside it.
-   Used by the home page, Info and the five current project pages.
+   Used by the home page, Info and the current project pages.
    (The older, unlisted project pages still use main.css.) */
 
 :root {
@@ -42,21 +42,36 @@ main { padding-top: 56px; }
 .name .ch { display: inline-block; transition: transform 1.6s cubic-bezier(.3,.7,.2,1); }
 .name:hover .ch { transform: translateY(var(--d, 1px)); transition-duration: 0.9s; }
 
-/* home: one work per row, title and year beside a modest image */
-.hrow { display: grid; grid-template-columns: minmax(0, 40rem) minmax(0, 1fr); column-gap: 2rem; padding-block: 28px; border-top: 1px solid var(--rule); align-items: start; }
-.hrow:first-child { border-top: none; padding-top: 0; }
-.hrow-t { display: flex; flex-direction: column; font-size: 19px; line-height: 1.35; }
-.hrow-t .y { font-size: 16px; margin-top: 2px; }
-.hrow:hover .t { color: var(--mute); }
+/* home: the list of works, set large, years small beside them */
+.tindex { list-style: none; padding-top: 12px; }
+.tindex li + li { margin-top: 0.55em; }
+.tindex a { display: inline-flex; align-items: baseline; gap: 0.9rem; font-size: clamp(26px, 3.4vw, 40px); line-height: 1.2; letter-spacing: -0.01em; }
+.tindex .ty { font-size: 15px; letter-spacing: 0; color: var(--mute); font-variant-numeric: tabular-nums; }
+.tindex a:hover .tt { color: var(--mute); }
 
-/* thumbnails: one 16:9 frame for every work, the shape of the Ghost, Double and Larry clips */
+/* home picture. With a pointer: pointing at a title opens that work's clip (or photo) just under it,
+   behind the rest of the list, in a fixed 3:2 frame so nothing moves. Titles flip light where they
+   cross a dark picture (difference blend; on the plain page they look as before).
+   On touch screens: one photo under the list, chosen at random on each visit. */
+.pick { margin-top: 48px; max-width: 40rem; }
+.pick img, .pick video { width: 100%; display: block; }
+.pick figcaption { margin-top: 8px; font-size: 14px; color: var(--mute); }
+.home .pick.hov { position: absolute; margin: 0; width: 44rem; max-width: 100%; aspect-ratio: 3 / 2; pointer-events: none; z-index: 0; }
+.pick.hov img, .pick.hov video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: left top; }
+@media (hover: hover) and (pointer: fine) {
+  .home { position: relative; }
+  .home .tindex { position: relative; z-index: 1; mix-blend-mode: difference; }
+  .home .tindex .tt, .home .tindex a:hover .tt { color: #d5d4d2; }
+  .home .tindex .ty { color: #848488; }
+}
+
+/* thumbnails (no longer on the home page; kept for any page that still uses them) */
 .thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--wait); }
 .thumb img, .thumb video { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
-.thumb video { opacity: 0; }
-.thumb.started video { opacity: 1; }
 @supports not (aspect-ratio: 16 / 9) {
   .thumb { height: 0; padding-top: 56.25%; }
   .grid img, .grid video { height: auto; }
+  .home .pick.hov { height: 0; padding-top: 66.67%; }
 }
 
 /* project pages */
@@ -95,7 +110,6 @@ main { padding-top: 56px; }
 .settle { transform: translateY(2px); transition: transform 9s ease-in; }
 
 @media (max-width: 1000px) and (min-width: 701px) {
-  .hrow { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); column-gap: 1.5rem; }
   .label { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); column-gap: 2rem; }
 }
 @media (max-width: 700px) {
@@ -103,8 +117,6 @@ main { padding-top: 56px; }
   .tomb { max-width: none; }
   .site { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 6px 80px; }
   main { padding-top: 36px; }
-  .hrow { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
-  .hrow-t { font-size: 17px; }
   .grid.three, .p5row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .info li { grid-template-columns: 5.5rem minmax(0, 1fr); column-gap: 0.75rem; }
 }
